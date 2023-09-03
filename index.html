@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="loading-screen position-fixed top-0 start-0 end-0 bottom-0 justify-content-center align-items-center">
+        <i class="fa-solid fa-pizza-slice fa-spin fa-5x"></i>
+    </div> 
+    
+
+    <div class="side-nav vh-100 position-fixed d-flex top-0">
+        <div class="nav-menu d-flex flex-column justify-content-between p-4">
+            <div class="links">
+                <ul class="list-unstyled fw-bold fs-5 overflow-hidden">
+                    <li id="list-item" onclick="showSearchInputs(); closeNav()" class="py-2">Search</li>
+                    <li id="list-item" onclick="getCategories();  closeNav()" class="py-2">Categories</li>
+                    <li id="list-item" onclick="getArea(); closeNav()" class="py-2">Area</li>
+                    <li id="list-item" onclick="getIngredients(); closeNav()" class="py-2">Ingredients</li>
+                    <li id="list-item" onclick="contacts(); closeNav()" class="py-2">Contact Us</li>
+                </ul>
+            </div>
+            <div class="details">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+            </div>
+        </div>
+        <div class="nav-tab d-flex flex-column justify-content-between py-4 text-center px-2 text-danger-emphasis">
+            <img class="logo" src="logo.png">
+            <i class="nav-icon fa-solid fa-align-justify fa-2x"></i>
+            <div class="d-flex flex-column">
+                <i class="fa-solid fa-globe pb-2"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container w-75" id="searchContainer">
+        
+    </div>
+
+     <div class="vh-100 position-relative">
+        <div class="inner-loading-screen top-0 start-0 end-0 bottom-0 justify-content-center align-items-center">
+            <i class="fa-solid fa-pizza-slice fa-spin fa-5x"></i>
+        </div>
+    
+        <div class="container">
+            <div class="row py-5 g-4 ms-5" id="rowData">
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
